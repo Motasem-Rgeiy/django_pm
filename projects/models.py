@@ -9,6 +9,9 @@ class Caregory(models.Model):
     name = models.CharField(max_length=255)
     def __str__(self):
         return self.name
+    class Meta:
+        verbose_name = _('Category')
+        verbose_name_plural = _('Category')
 
 
 class ProjectStatus(models.IntegerChoices):
